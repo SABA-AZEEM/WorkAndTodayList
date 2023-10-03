@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(purple,black);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x:hidden ;
+}
+header{
+    padding: 30px;
+    color: white;
+}
+header i{
+    cursor: pointer;
+    margin-right: 2rem;
+}
+header i:hover{
+    color: rgb(228, 74, 228);
+}
+header span{
+    margin-left: .4rem;
+}
+#heading{
+    background-color: rgb(197, 6, 197);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2rem;
+}
+.container{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.tasks{
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tasks div{
+    border-bottom: 1px solid lightgray;
+    margin: 1rem ;
+}
+.tasks input[type='text']{
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    font-size: 1.1rem;
+}
+.read-input{
+    text-decoration: line-through;
+}
+
+form input[type='text']{
+    border: none;
+    outline: none;
+    text-align: center;
+    padding:  15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+form button{
+    background-color: rgb(200, 18, 200);
+    color: white;
+    padding: 8px 12px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}

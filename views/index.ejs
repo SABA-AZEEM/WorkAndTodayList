@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+    <h1 id="heading"><%=heading%></h1>
+    <%if(locals.tasks){%>
+        <div class="tasks">
+        
+            <% tasks.forEach((task)=>{ %>
+                    <div>
+                        <input type="checkbox" class="checkbox" value="<%=task._id%>">
+                        <input type="text" value="<%=task.name%>" readonly class="read" >
+                    </div>
+            <%});%>
+            <form action="submitToday" method="post" class="add-item">
+                <input type="text" value="" name="task" placeholder="New Item" required>
+                <button>+</button>
+            </form>
+        </div>
+    <%} else{ %>
+        <form action="submitToday" method="post" class="add-item">
+                <input type="text" value="" name="task" placeholder="New Item" required>
+                <button>+</button>
+        </form>
+    <%}%>
+    
+</div>
+
+<%- include('partials/footer.ejs') %>
